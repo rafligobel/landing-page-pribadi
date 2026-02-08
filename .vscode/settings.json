@@ -1,0 +1,12 @@
+{
+    "css.lint.unknownAtRules": "ignore",
+    "issues.exclude": {
+        "css": [
+            "unknownProperties",
+            "unknownAtRules"
+        ]
+    },
+    "files.associations": {
+        "*.css": "tailwindcss"
+    }
+}
