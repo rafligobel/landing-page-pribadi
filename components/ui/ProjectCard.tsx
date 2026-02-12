@@ -1,5 +1,4 @@
 'use client';
-import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowUpRight } from 'lucide-react';
@@ -14,14 +13,10 @@ interface ProjectProps {
 
 export function ProjectCard({ title, description, image, technologies, link }: ProjectProps) {
     return (
-        <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.4 }}
-            viewport={{ once: true }}
-            className="group relative overflow-hidden rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm hover:border-white/20 transition-all duration-300 hover:shadow-xl hover:shadow-purple-500/10"
+        <div
+            className="group relative overflow-hidden rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm hover:border-white/20 transition-all duration-300 hover:shadow-xl hover:shadow-purple-500/10 h-full flex flex-col"
         >
-            <div className="aspect-video w-full overflow-hidden bg-gray-800 relative">
+            <div className="aspect-video w-full overflow-hidden bg-gray-800 relative flex-shrink-0">
                 {image ? (
                     <Image
                         src={image}
@@ -41,7 +36,7 @@ export function ProjectCard({ title, description, image, technologies, link }: P
                 </div>
             </div>
 
-            <div className="p-6">
+            <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-2xl font-bold mb-2 group-hover:text-purple-400 transition-colors">{title}</h3>
                 <p className="text-gray-400 mb-4 line-clamp-2">{description}</p>
                 <div className="flex flex-wrap gap-2">
@@ -52,6 +47,6 @@ export function ProjectCard({ title, description, image, technologies, link }: P
                     ))}
                 </div>
             </div>
-        </motion.div>
+        </div>
     );
 }

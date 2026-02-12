@@ -1,4 +1,4 @@
-import { Github, Twitter, Linkedin } from 'lucide-react';
+import { Github, Twitter, Linkedin, Instagram } from 'lucide-react';
 
 export function Footer() {
     return (
@@ -7,13 +7,13 @@ export function Footer() {
                 <p className="text-sm">© {new Date().getFullYear()} Antigravity. All rights reserved.</p>
 
                 <div className="flex gap-6">
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                    <a href="https://github.com/rafligobel" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
                         <Github size={20} />
                     </a>
-                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
-                        <Twitter size={20} />
+                    <a href="https://www.instagram.com/rafligobel_" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                        <Instagram size={20} />
                     </a>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                    <a href="https://linkedin.com/in/rafligobel" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
                         <Linkedin size={20} />
                     </a>
                 </div>

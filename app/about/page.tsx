@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata = {
     title: 'About Me | Full Stack Developer',
@@ -9,7 +10,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-6 py-20 min-h-screen max-w-4xl">
             <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
                 <div>
-                    <h1 className="text-4xl md:text-5xl font-bold mb-6">Hello, I'm <span className="gradient-text">Antigravity</span>.</h1>
+                    <h1 className="text-4xl md:text-5xl font-bold mb-6">Hello, I'm <span className="gradient-text">Rafli Ananda Rizkillah Gobel</span>.</h1>
                     <p className="text-lg text-gray-400 leading-relaxed mb-6">
                         I started my journey with PHP and Laravel, building robust backend systems.
                         Recently, I've been expanding my horizons into the modern JavaScript ecosystem,
@@ -23,16 +24,19 @@ export default function AboutPage() {
                         <Link href="/portfolio" className="px-6 py-3 rounded-full bg-white text-black font-medium hover:bg-gray-200 transition-colors">
                             See My Work
                         </Link>
-                        <a href="mailto:contact@example.com" className="px-6 py-3 rounded-full border border-white/20 hover:bg-white/10 transition-colors font-medium">
+                        <a href="mailto:rafligobel02@gmail.com" className="px-6 py-3 rounded-full border border-white/20 hover:bg-white/10 transition-colors font-medium">
                             Contact Me
                         </a>
                     </div>
                 </div>
-                <div className="relative aspect-square md:aspect-[4/5] w-full max-w-md mx-auto rounded-3xl overflow-hidden border border-white/10 bg-white/5 backdrop-blur-sm shadow-2xl skew-y-3 hover:skew-y-0 transition-transform duration-500">
-                    {/* Placeholder for user photo */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-blue-500/20 flex items-center justify-center">
-                        <span className="text-white/20 text-6xl font-bold">Photo</span>
-                    </div>
+                <div className="relative aspect-square md:aspect-[4/5] w-full max-w-md mx-auto rounded-3xl overflow-hidden border border-white/10 bg-white/5 backdrop-blur-sm shadow-2xl transition-all duration-500 group hover:-translate-y-2 hover:shadow-purple-500/30">
+                    <Image
+                        src="/images/IMG_4783.jpg"
+                        alt="Rafli Ananda Rizkillah Gobel"
+                        fill
+                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                        priority
+                    />
                 </div>
             </div>
 

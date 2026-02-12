@@ -33,7 +33,7 @@ export default function Home() {
         className="max-w-4xl w-full text-center z-10"
       >
         <motion.div variants={item} className="mb-4 inline-block px-4 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm text-sm font-medium text-gray-300">
-          👋 Welcome to my digital garden
+          👋 Welcome to my portfolio
         </motion.div>
 
         <motion.h1 variants={item} className="text-5xl md:text-7xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-200 to-gray-400">

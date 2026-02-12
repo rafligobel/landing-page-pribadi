@@ -1,10 +1,10 @@
 'use client';
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import { ProjectCard } from '@/components/ui/ProjectCard';
 
 import { Project } from '@/lib/mdx';
 
-const container = {
+const container: Variants = {
     hidden: { opacity: 0 },
     visible: {
         opacity: 1,
@@ -12,6 +12,11 @@ const container = {
             staggerChildren: 0.2,
         },
     },
+};
+
+const itemVariants: Variants = {
+    hidden: { opacity: 0, scale: 0.9 },
+    visible: { opacity: 1, scale: 1 }
 };
 
 export function ProjectGrid({ projects }: { projects: Project[] }) {
@@ -23,7 +28,7 @@ export function ProjectGrid({ projects }: { projects: Project[] }) {
             className="grid grid-cols-1 md:grid-cols-2 gap-8"
         >
             {projects.map((project) => (
-                <motion.div key={project.slug} variants={{ hidden: { opacity: 0, scale: 0.9 }, visible: { opacity: 1, scale: 1 } }}>
+                <motion.div key={project.slug} variants={itemVariants} className="h-full">
                     <ProjectCard
                         title={project.title}
                         description={project.description}

@@ -15,7 +15,7 @@ export default function PortfolioPage() {
                 <span className="text-purple-400 font-semibold tracking-wider text-sm uppercase">My Work</span>
                 <h1 className="text-4xl md:text-5xl font-bold mt-4 mb-6">Selected Projects</h1>
                 <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-                    Here are a few past design projects I&apos;ve worked on. Want to see more? <a href="mailto:contact@example.com" className="text-white underline decoration-purple-500 underline-offset-4 hover:text-purple-400 transition-colors">Email me</a>.
+                    Here are a few past design projects I&apos;ve worked on. Want to see more? <a href="mailto:rafligobel02@gmail.com" className="text-white underline decoration-purple-500 underline-offset-4 hover:text-purple-400 transition-colors">Email me</a>.
                 </p>
             </div>
 
